@@ -1,0 +1,67 @@
+/* Kelime Öğren Popup */
+.kelime-ogren-popup {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 360px;
+  max-width: 90vw;
+  background: #1a1a2e;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  z-index: 2147483647;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #eee;
+  padding: 20px 24px 16px 24px;
+  text-align: center;
+  animation: slideDown 0.3s ease;
+  border-left: 3px solid #e94560;
+  border-right: 3px solid #e94560;
+  border-bottom: 3px solid #e94560;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.kelime-popup-en {
+  font-size: 48px;
+  font-weight: bold;
+  color: #e94560;
+  margin-bottom: 8px;
+  line-height: 1.1;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  transition: font-size 0.2s ease;
+}
+
+.kelime-popup-divider {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #e94560, #0f3460);
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.kelime-popup-tr {
+  font-size: 28px;
+  color: #a8d8ea;
+  margin-bottom: 6px;
+  line-height: 1.2;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  transition: font-size 0.2s ease, opacity 0.5s ease;
+}
+
+.kelime-popup-time {
+  font-size: 11px;
+  color: #555;
+}
