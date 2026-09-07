@@ -61,6 +61,8 @@ english,turkish
 apple,elma
 book,kitap
 beautiful,güzel
+```
+
 (Not: Türkçe kelimede virgül varsa, kelimeyi tırnak içine alın. Örn: hello,"merhaba, nasılsın")
 
 ## 🛠️ Geliştirme ve Katkıda Bulunma
